@@ -10,7 +10,7 @@ import axios from 'axios'
 import { Toast } from 'vant'
 import router from '../router'
 
-axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//localhost:28019/api/v1' : '//localhost:28019/api/v1'
+axios.defaults.baseURL = process.env.NODE_ENV == 'development' ? '//192.168.0.101:28019/api/v1' : '//192.168.0.101:28019/api/v1'
 axios.defaults.withCredentials = true
 axios.defaults.headers['X-Requested-With'] = 'XMLHttpRequest'
 axios.defaults.headers['token'] = localStorage.getItem('token') || ''

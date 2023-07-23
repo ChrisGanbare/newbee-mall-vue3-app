@@ -16,7 +16,7 @@ app.config.globalProperties.$filters = {
         if (url && url.startsWith('http')) {
             return url
         } else {
-            url = `http://localhost:28019${url}`
+            url = `http://192.168.0.101:28019${url}`
             return url
         }
     }
@@ -82,7 +82,7 @@ router.beforeEach(() => {//我选择在beforeEach中上报，其实在afterEach�
 });
 
 // Vue 报错上报到skywalking。
-Vue.config.errorHandler = (error) => {
+app.config.errorHandler = (error) => {
     console.error(error);
     reportFrameErrors(error);
 }

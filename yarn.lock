@@ -5200,6 +5200,11 @@ jest-worker@^25.4.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+js-base64@^3.6.0:
+  version "3.7.7"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-3.7.7.tgz#e51b84bf78fbf5702b9541e2cb7bfcb893b43e79"
+  integrity sha512-7rCnleh0z2CkXhH67J8K1Ytz0b2Y+yxTPL+/KOJoa20hfnVQ/3/T6W/KflYI4bRHRagNeXeU2bkNGI3v1oS/lw==
+
 js-md5@^0.7.3:
   version "0.7.3"
   resolved "https://registry.npm.taobao.org/js-md5/download/js-md5-0.7.3.tgz"
@@ -7588,6 +7593,13 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+skywalking-client-js@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/skywalking-client-js/-/skywalking-client-js-0.10.0.tgz#b1d6a58bc7d72bb4ef2f0f8ec6a389e3dd65b5c9"
+  integrity sha512-WlsusgsfpHeKG6ssinN7DQRuIt5hFmwGTP0QiRepY7CmnrLvLRkyZEEbfdRc/y+WayrQKkWxjPBWozMick+Csg==
+  dependencies:
+    js-base64 "^3.6.0"
 
 slash@^1.0.0:
   version "1.0.0"

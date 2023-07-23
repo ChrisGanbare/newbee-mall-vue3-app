@@ -1,12 +1,13 @@
-FROM node:16.13.0
+FROM node:12.22.12
 
 RUN mkdir -p /home/nodejs/app
 
 WORKDIR /home/nodejs/app
 COPY . .
 
-RUN npm config set strict-ssl false
-RUN npm install
+RUN yarn config set strict-ssl false
+RUN yarn install
+RUN yarn build
 
 EXPOSE 8080
-CMD ["npm","run", "serve"]
+CMD ["yarn", "serve"]
